@@ -1,31 +1,32 @@
-import Link from 'next/link';
-
-const HomePage = () => {
+cont MainLayout = props => {
     return (
         <div className='container'>
             <div className='topbar'>
                 <div className='logo-container'>
                     <Link href='/'>
-                        <a className= 'link'>STOCK</a>
+                        <a className='link'>STOCK</a>
                     </Link>
                 </div>
                 <div className='menu-container'>
                     <div>
                         <Link href='/'>
-                            <a className= 'link'>Product</a>
+                            <a className='link'>Product</a>
                         </Link>
                     </div>
                     <div>
                         <Link href='/'>
-                            <a className= 'link'>Mangane</a>
+                            <a className='link'>Mangane</a>
                         </Link>
                     </div>
                     <div>
                         <Link href='/'>
-                            <a className= 'link'>Profile</a>
+                            <a className='link'>Profile</a>
                         </Link>
                     </div>
                 </div>
+            </div>
+            <div className='content'>
+                {props.children}
             </div>
             <style jsx global>{`
                 @font-face{
@@ -57,11 +58,9 @@ const HomePage = () => {
                .link {
                 text-decoration: none;
                 color : black;
-
                }
            `}</style>
 
         </div> // JSX-HTML
     )
 }
-export default HomePage;
