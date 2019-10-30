@@ -2,7 +2,7 @@ import MainLayout from '../layouts/MainLayout';
 const ProfilePage = () => {
     return (
         <MainLayout>
-          <div>Profile</div> // JSX-HTML  
+          <div>Profile</div>
         </MainLayout>
         
     )
