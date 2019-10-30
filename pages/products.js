@@ -1,6 +1,10 @@
+import MainLayout from '../layouts/MainLayout';
 const ProductPage = () =>{
     return (
-        <div>Product</div>
+        <MainLayout>
+            <div>Product</div> 
+        </MainLayout>
+       
     )
 }
 export default ProductPage;

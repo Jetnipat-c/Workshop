@@ -1,6 +1,10 @@
+import MainLayout from '../layouts/MainLayout';
 const ProfilePage = () => {
     return (
-        <div>Profile</div> // JSX-HTML
+        <MainLayout>
+          <div>Profile</div> // JSX-HTML  
+        </MainLayout>
+        
     )
  }
  export default ProfilePage;

@@ -1,6 +1,10 @@
+import MainLayout from '../layouts/MainLayout';
 const ManagePage = () => {
     return (
-        <div>Manage </div> // JSX-HTML
+        <MainLayout>
+            <div>Manage </div> // JSX-HTML
+        </MainLayout>
+        
     )
  }
  export default ManagePage;

@@ -1,4 +1,5 @@
-cont MainLayout = props => {
+import Link from 'next/link';
+const MainLayout = props => {
     return (
         <div className='container'>
             <div className='topbar'>
@@ -9,17 +10,17 @@ cont MainLayout = props => {
                 </div>
                 <div className='menu-container'>
                     <div>
-                        <Link href='/'>
+                        <Link href='/products'>
                             <a className='link'>Product</a>
                         </Link>
                     </div>
                     <div>
-                        <Link href='/'>
+                        <Link href='/manage'>
                             <a className='link'>Mangane</a>
                         </Link>
                     </div>
                     <div>
-                        <Link href='/'>
+                        <Link href='/profile'>
                             <a className='link'>Profile</a>
                         </Link>
                     </div>
@@ -48,6 +49,7 @@ cont MainLayout = props => {
                    height: 32px;
                    background-color: AliceBlue;
                    padding:  0  80px; 
+                   box-shadow: rgba(0,0,0,0.2) 0px 1px 2px;
                }
                .menu-container {
                    display: flex;
@@ -64,3 +66,4 @@ cont MainLayout = props => {
         </div> // JSX-HTML
     )
 }
+export default MainLayout;
