@@ -2,14 +2,14 @@ import Link from 'next/link';
 const MainLayout = props => {
     return (
         <div className='container'>
-            
+
             <div className='topbar'>
                 <div className='logo-container'>
-                
+
                     <Link href='/'>
-                         <a className='link' >STOCK</a>   
+                        <a className='link' >STOCK</a>
                     </Link>
-                    
+
                 </div>
                 <div className='menu-container'>
                     <div>
@@ -36,7 +36,7 @@ const MainLayout = props => {
             </div>
 
             <div className='search'>
-                <i className="icon-search"></i>
+                {/* <i className="icon-search"></i> */}
                 <input className='text-search' type="text" placeholder="Search.." >
                 </input>
                 <button className="box1" type="submit">Search</button>
@@ -87,6 +87,12 @@ const MainLayout = props => {
                .link {
                 text-decoration: none;
                 color : black;
+               }
+               .logo-container {
+                background-image: url('/static/images/stock.png');
+                background-position: 20px 10px; 
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 50px;
                }
                .team {
                 //display: flex;
@@ -160,11 +166,26 @@ const MainLayout = props => {
                     color:black;
                     border-left: 1px solid black;
                     text-align: center;
-              }
+                }
                   
                   h3 {
                     opacity: 0.7;
+                }
+                input[type=text] {
+                    width: 500px;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    background-color: white;
+                    background-image: url('/static/images/search-icon-hi.png');
+                    background-position: 10px 10px; 
+                    background-repeat: no-repeat;
+                    padding: 12px 20px 12px 50px;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
                   }
+                
                 
            `}</style>
 
