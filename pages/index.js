@@ -3,8 +3,14 @@ import MainLayout from '../layouts/MainLayout';
 const HomePage = () => {
     return (
         <MainLayout>
-            <div>HomePage</div> 
+            <div >  
+            stokzzzz
+            </div>
+            <style JSX>{`
+            
+            `}</style>
         </MainLayout>
+
     )
 }
 export default HomePage;
