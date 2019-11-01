@@ -149,7 +149,7 @@ const MainLayout = props => {
                       display: flex;
                       justify-content: center;
                       margin-top: 50px;
-                      height:200px       
+                      height:200px;
                   }
                   .boxL-introduct {
                         width:300px;
