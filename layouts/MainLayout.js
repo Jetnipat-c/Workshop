@@ -10,7 +10,6 @@ const MainLayout = props => {
                         <a className='link' >STOCK</a>
                     </Link>
 
-                </div>
                 <div className='menu-container'>
                     <div>
                         <Link href='/products'>
